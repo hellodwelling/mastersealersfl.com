@@ -1110,6 +1110,27 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2301629e-b1db-4e05-bd4d-5e2270056bc9.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/2301629e-b1db-4e05-bd4d-5e2270056bc9.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/> 
@@ -1129,34 +1150,13 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/03af7d27-6cd1-4750-867f-0567bcbff141.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/03af7d27-6cd1-4750-867f-0567bcbff141.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/03af7d27-6cd1-4750-867f-0567bcbff141.png" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/03af7d27-6cd1-4750-867f-0567bcbff141.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="" /> -->
                             
                         </div>
 
@@ -1949,7 +1949,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2301629e-b1db-4e05-bd4d-5e2270056bc9.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1957,7 +1957,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/03af7d27-6cd1-4750-867f-0567bcbff141.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/2301629e-b1db-4e05-bd4d-5e2270056bc9.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1965,7 +1965,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/329052d9-ee5c-4596-b239-1554bf07255e.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/03af7d27-6cd1-4750-867f-0567bcbff141.png" alt="All Photos for Master Sealers in Tampa, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2505,31 +2505,31 @@
                       <ul role="list" class="mt-4 -mx-1 space-y-4">
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
-                                Sun:  None 
+                                Sun:  8:00am - 6:00pm 
                             </li>
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
-                                Mon:  None 
+                                Mon:  08:00am - 06:00pm 
                             </li>
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
-                                Tues:  None 
+                                Tues:  08:00am - 06:00pm 
                             </li>
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
-                                Wed:  None 
+                                Wed:  8:00am - 6:00pm 
                             </li>
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
-                                Thu:  None 
+                                Thu:  8:00am - 6:00pm 
                             </li>
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
-                                Fri:  None 
+                                Fri:  8:00am - 6:00pm 
                             </li>
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
-                                Sat:  None 
+                                Sat:  8:00am - 6:00pm 
                             </li>
                         
                       </ul>
@@ -2704,68 +2704,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171802"
-                                                    name="171802"
+                                                    id="contact-service-185353"
+                                                    name="185353"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paver Sealing"
                                             />
-                                            <label for="contact-label-service-171802" class="ml-3 text-sm font-medium text-gray-700">Paver Sealing</label>
+                                            <label for="contact-label-service-185353" class="ml-3 text-sm font-medium text-gray-700">Paver Sealing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171803"
-                                                    name="171803"
+                                                    id="contact-service-185354"
+                                                    name="185354"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Travertine Sealing"
                                             />
-                                            <label for="contact-label-service-171803" class="ml-3 text-sm font-medium text-gray-700">Travertine Sealing</label>
+                                            <label for="contact-label-service-185354" class="ml-3 text-sm font-medium text-gray-700">Travertine Sealing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171804"
-                                                    name="171804"
+                                                    id="contact-service-185355"
+                                                    name="185355"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Stone Sealing"
                                             />
-                                            <label for="contact-label-service-171804" class="ml-3 text-sm font-medium text-gray-700">Exterior Stone Sealing</label>
+                                            <label for="contact-label-service-185355" class="ml-3 text-sm font-medium text-gray-700">Exterior Stone Sealing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171805"
-                                                    name="171805"
+                                                    id="contact-service-185356"
+                                                    name="185356"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paver/Travertine Repair"
                                             />
-                                            <label for="contact-label-service-171805" class="ml-3 text-sm font-medium text-gray-700">Paver/Travertine Repair</label>
+                                            <label for="contact-label-service-185356" class="ml-3 text-sm font-medium text-gray-700">Paver/Travertine Repair</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171806"
-                                                    name="171806"
+                                                    id="contact-service-185357"
+                                                    name="185357"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Outdoor Kitchen Sealing"
                                             />
-                                            <label for="contact-label-service-171806" class="ml-3 text-sm font-medium text-gray-700">Outdoor Kitchen Sealing</label>
+                                            <label for="contact-label-service-185357" class="ml-3 text-sm font-medium text-gray-700">Outdoor Kitchen Sealing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171807"
-                                                    name="171807"
+                                                    id="contact-service-185358"
+                                                    name="185358"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Pressure Washing"
                                             />
-                                            <label for="contact-label-service-171807" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing</label>
+                                            <label for="contact-label-service-185358" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing</label>
                                         </div>
                                         
                                     </div>
@@ -2796,68 +2796,68 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171802"
-                                                    name="171802"
+                                                    id="contact-service-185353"
+                                                    name="185353"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paver Sealing"
                                             />
-                                            <label for="contact-label-service-171802" class="ml-3 text-sm font-medium text-gray-700">Paver Sealing</label>
+                                            <label for="contact-label-service-185353" class="ml-3 text-sm font-medium text-gray-700">Paver Sealing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171803"
-                                                    name="171803"
+                                                    id="contact-service-185354"
+                                                    name="185354"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Travertine Sealing"
                                             />
-                                            <label for="contact-label-service-171803" class="ml-3 text-sm font-medium text-gray-700">Travertine Sealing</label>
+                                            <label for="contact-label-service-185354" class="ml-3 text-sm font-medium text-gray-700">Travertine Sealing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171804"
-                                                    name="171804"
+                                                    id="contact-service-185355"
+                                                    name="185355"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Exterior Stone Sealing"
                                             />
-                                            <label for="contact-label-service-171804" class="ml-3 text-sm font-medium text-gray-700">Exterior Stone Sealing</label>
+                                            <label for="contact-label-service-185355" class="ml-3 text-sm font-medium text-gray-700">Exterior Stone Sealing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171805"
-                                                    name="171805"
+                                                    id="contact-service-185356"
+                                                    name="185356"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Paver/Travertine Repair"
                                             />
-                                            <label for="contact-label-service-171805" class="ml-3 text-sm font-medium text-gray-700">Paver/Travertine Repair</label>
+                                            <label for="contact-label-service-185356" class="ml-3 text-sm font-medium text-gray-700">Paver/Travertine Repair</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171806"
-                                                    name="171806"
+                                                    id="contact-service-185357"
+                                                    name="185357"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Outdoor Kitchen Sealing"
                                             />
-                                            <label for="contact-label-service-171806" class="ml-3 text-sm font-medium text-gray-700">Outdoor Kitchen Sealing</label>
+                                            <label for="contact-label-service-185357" class="ml-3 text-sm font-medium text-gray-700">Outdoor Kitchen Sealing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-171807"
-                                                    name="171807"
+                                                    id="contact-service-185358"
+                                                    name="185358"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Pressure Washing"
                                             />
-                                            <label for="contact-label-service-171807" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing</label>
+                                            <label for="contact-label-service-185358" class="ml-3 text-sm font-medium text-gray-700">Pressure Washing</label>
                                         </div>
                                         
                                     </div>
